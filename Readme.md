@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Евгения Фукина](https://up.htmlacademy.ru/htmlcss/29/user/1453783).
-* Наставник: `Антон Попов`.
+* Наставник: [Антон Попов](https://htmlacademy.ru/profile/joker).
 
 ---
 
