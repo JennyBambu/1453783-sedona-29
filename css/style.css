@@ -1,15 +1,15 @@
 :root {
-  --basic-white: #FFFFFF;
+  --basic-white: #FFF;
   --opacity-white: rgba(255,255,255,0.3);
 
   --white-footer: rgba(255, 255, 255, 0.9);
   --shadow-form: rgba(0, 1, 1, 0.15);
   --shadow-site: rgba(0, 1, 1, 0.2);
 
-  --basic-black: #000000;
+  --basic-black: #000;
   --basic-blue: #81B3D2;
 
-  --light-black: #333333;
+  --light-black: #333;
   --opacity-black: rgba(0,0,0,0.3);
 
   --basic-brown: #766357;
@@ -19,15 +19,15 @@
   --black-academy: #231F20;
   --grey-academy: #BDBBBC;
 
-  --background-grey: #888888;
-  --basic-grey: #EEEEEE;
+  --background-grey: #888;
+  --basic-grey: #EEE;
 
   --grey-slider: rgba(171, 171, 171, 0.3);
   --center-slider: #ABABAB;
   --status-bar: rgba(255,255,255,0.3);
   --grey-block: #6A6A6A;
 
-  --grey-reyting: #666666;
+  --grey-reyting: #666;
   --grey-field: #F2F2F2;
   --grey-arrow: #CACACA;
 
@@ -42,7 +42,7 @@ body {
  background-color: var(--basic-white);
  margin: 0px;
  padding: 0px;
- font-family:"PT Sans","Arial",sans-serif;
+ font-family: "PT Sans","Arial",sans-serif;
  font-size: 14px;
  text-transform: uppercase;
  line-height: 21px;
@@ -172,12 +172,14 @@ a {
   border: none;
 }
 
-.link-reservation:hover,.button-date-search:hover {
+.link-reservation:hover,
+.button-date-search:hover {
   background-color: var(--hover-brown);
 
 }
 
-.link-reservation:active,.button-date-search:active {
+.link-reservation:active,
+.button-date-search:active {
   background-color: var(--active-brown);
   color: var(--opacity-white);
 }
@@ -231,7 +233,8 @@ a {
   font-weight: bold;
 }
 
-.hotels-filter ul,.hotels-sorting {
+.hotels-filter ul,
+.hotels-sorting {
   list-style-type: none;
 }
 
