@@ -1,0 +1,240 @@
+:root {
+  --basic-white: #FFFFFF;
+  --opacity-white: rgba(255,255,255,0.3);
+
+  --white-footer: rgba(255, 255, 255, 0.9);
+  --shadow-form: rgba(0, 1, 1, 0.15);
+  --shadow-site: rgba(0, 1, 1, 0.2);
+
+  --basic-black: #000000;
+  --basic-blue: #81B3D2;
+
+  --light-black: #333333;
+  --opacity-black: rgba(0,0,0,0.3);
+
+  --basic-brown: #766357;
+  --hover-brown: #604E43;
+  --active-brown: #503E33;
+
+  --black-academy: #231F20;
+  --grey-academy: #BDBBBC;
+
+  --background-grey: #888888;
+  --basic-grey: #EEEEEE;
+
+  --grey-slider: rgba(171, 171, 171, 0.3);
+  --center-slider: #ABABAB;
+  --status-bar: rgba(255,255,255,0.3);
+  --grey-block: #6A6A6A;
+
+  --grey-reyting: #666666;
+  --grey-field: #F2F2F2;
+  --grey-arrow: #CACACA;
+
+  --blue-hover: #669EC0;
+  --blue-active: #5496BD;
+  --grey-plus: #A9A9A9;
+  --date-hover: #EBEBEB;
+  --line-hotels: #E5E5E5;
+}
+
+body {
+ background-color: var(--basic-white);
+ margin: 0px;
+ padding: 0px;
+ font-family:"PT Sans","Arial",sans-serif;
+ font-size: 14px;
+ text-transform: uppercase;
+ line-height: 21px;
+ min-width: 960px;
+ color: var(--basic-black);
+ font-weight: 400px;
+ text-align: center;
+}
+
+a {
+  text-decoration: none;
+}
+
+.site-navigation {
+  list-style-type: none;
+  line-height: 26px;
+}
+
+.sedona-photo {
+  background-color: var(--basic-blue);
+  width: 1200px;
+  height: 509px;
+}
+
+.item-with-image {
+  background-color: var(--basic-blue);
+  color: var(--basic-white)
+}
+
+.title-with-image {
+  font-size: 21px;
+  color: var(--basic-white);
+}
+
+.item-title {
+  font-size: 21px;
+}
+
+.intro {
+  line-height: 26px;
+}
+
+.search-title {
+  line-height: 24px;
+  font-size: 30px;
+}
+
+.hotel-search-description {
+  line-height: 24px;
+}
+
+.feature-item {
+  background-color: var(--basic-grey);
+}
+
+.features-list,.advantages {
+  list-style-type: none;
+}
+
+.main-footer {
+  background-color: var(--white-footer);
+}
+
+
+.logo-academy {
+  line-height: 26px;
+}
+
+.contacts {
+  line-height: 26px;
+  font-size: 21px;
+  font-weight: bold;
+  list-style-type: none;
+}
+
+.hotel-name, .button-date-search {
+  line-height: 26px;
+  font-size: 21px;
+}
+
+.link {
+  color: var(--basic-black);
+}
+
+.link:hover,.hotels-sorting-dotted:hover {
+  color: var(--basic-blue);
+}
+
+.link:active {
+  color: var(--opacity-black);
+}
+
+.social-networks-list {
+  list-style-type: none;
+}
+
+.link-about {
+  background-color: var(--basic-blue);
+  color: var(--basic-white);
+  padding-right: 16px;
+  padding-bottom: 4px;
+  padding-top: 4px;
+  padding-left: 17px;
+}
+
+.link-about:hover {
+  background-color: var(--blue-hover);
+}
+
+.link-about:active {
+   background-color: var(--blue-active);
+   color: var(--opacity-white);
+}
+
+.link-reservation {
+  background-color: var(--basic-brown);
+  color: var(--basic-white);
+  padding-left: 16px;
+  padding-bottom: 4px;
+  padding-top: 4px;
+  padding-right: 17px;
+}
+
+.button-date-search {
+  background-color: var(--basic-brown);
+  color: var(--basic-white);
+  border: none;
+}
+
+.link-reservation:hover,.button-date-search:hover {
+  background-color: var(--hover-brown);
+
+}
+
+.link-reservation:active,.button-date-search:active {
+  background-color: var(--active-brown);
+  color: var(--opacity-white);
+}
+
+.button-show {
+  background-color: transparent;
+  border: 2px solid var(--basic-white);
+  text-transform: uppercase;
+  border-radius: 2px;
+}
+
+.button-show:hover {
+  background-color: var(--basic-white);
+}
+
+.active-page {
+  color: var(--basic-brown);
+}
+
+.hotels-filter {
+  background-color: var(--basic-blue);
+}
+
+.hotels-sorting-active {
+  color: var(--basic-blue);
+  line-height: 18px;
+  font-size: 12px;
+}
+
+.hotels-sorting-dotted {
+  font-size: 12px;
+  line-height: 18px;
+  color: var(--opacity-black);
+  border-bottom: dotted var(--basic-blue);
+}
+
+.hotels-sorting-dotted:active {
+  color: var(--basic-black);
+  border: none;
+}
+
+.raiting {
+  color: var(--grey-reyting);
+  background-color: var(--grey-field);
+  padding:  3px 12px 3px 15px;
+}
+
+.hotels-found {
+  line-height: 26px;
+  font-size: 21px;
+  font-weight: bold;
+}
+
+.hotels-filter ul,.hotels-sorting {
+  list-style-type: none;
+}
+
+.academy:hover {
+   color: red;
+}
