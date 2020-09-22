@@ -40,8 +40,6 @@
 
 body {
  background-color: var(--basic-white);
- margin: 0px;
- padding: 0px;
  font-family: "PT Sans","Arial",sans-serif;
  font-size: 14px;
  text-transform: uppercase;
