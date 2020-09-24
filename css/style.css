@@ -40,13 +40,11 @@
 
 body {
  background-color: var(--basic-white);
- font-family: "PT Sans","Arial",sans-serif;
+ font-family: "PT Sans", Arial, sans-serif;
  font-size: 14px;
  text-transform: uppercase;
- line-height: 21px;
- min-width: 960px;
+ line-height: 1,5em;
  color: var(--basic-black);
- font-weight: 400px;
  text-align: center;
 }
 
@@ -56,13 +54,11 @@ a {
 
 .site-navigation {
   list-style-type: none;
-  line-height: 26px;
 }
 
 .sedona-photo {
   background-color: var(--basic-blue);
-  width: 1200px;
-  height: 509px;
+  display: inline-block;
 }
 
 .item-with-image {
@@ -79,21 +75,13 @@ a {
   font-size: 21px;
 }
 
-.intro {
-  line-height: 26px;
-}
-
 .search-title {
-  line-height: 24px;
   font-size: 30px;
-}
-
-.hotel-search-description {
-  line-height: 24px;
 }
 
 .feature-item {
   background-color: var(--basic-grey);
+  padding: 10px 0;
 }
 
 .features-list,.advantages {
@@ -104,11 +92,6 @@ a {
   background-color: var(--white-footer);
 }
 
-
-.logo-academy {
-  line-height: 26px;
-}
-
 .contacts {
   line-height: 26px;
   font-size: 21px;
@@ -117,7 +100,6 @@ a {
 }
 
 .hotel-name, .button-date-search {
-  line-height: 26px;
   font-size: 21px;
 }
 
@@ -140,10 +122,7 @@ a {
 .link-about {
   background-color: var(--basic-blue);
   color: var(--basic-white);
-  padding-right: 16px;
-  padding-bottom: 4px;
-  padding-top: 4px;
-  padding-left: 17px;
+  padding: 4px 16px 4px 17px;
 }
 
 .link-about:hover {
@@ -158,10 +137,8 @@ a {
 .link-reservation {
   background-color: var(--basic-brown);
   color: var(--basic-white);
-  padding-left: 16px;
-  padding-bottom: 4px;
-  padding-top: 4px;
-  padding-right: 17px;
+  padding: 4px 17px 4px 16px;
+
 }
 
 .button-date-search {
@@ -203,13 +180,11 @@ a {
 
 .hotels-sorting-active {
   color: var(--basic-blue);
-  line-height: 18px;
   font-size: 12px;
 }
 
 .hotels-sorting-dotted {
   font-size: 12px;
-  line-height: 18px;
   color: var(--opacity-black);
   border-bottom: dotted var(--basic-blue);
 }
@@ -226,7 +201,6 @@ a {
 }
 
 .hotels-found {
-  line-height: 26px;
   font-size: 21px;
   font-weight: bold;
 }
@@ -234,8 +208,4 @@ a {
 .hotels-filter ul,
 .hotels-sorting {
   list-style-type: none;
-}
-
-.academy:hover {
-   color: red;
 }
