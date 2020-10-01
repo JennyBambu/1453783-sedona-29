@@ -209,3 +209,66 @@ a {
 .hotels-sorting {
   list-style-type: none;
 }
+
+
+
+.main-footer .container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+
+.page-body {
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+}
+
+.features-list {
+  display: grid;
+  grid-template-columns: 400px 400px  400px;
+  grid-template-rows: 586px 256px  256px;
+}
+
+.picture-right {
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  display: grid;
+  grid-template-columns: 400px 800px;
+  height: 256px;
+}
+
+.features-list .advantages {
+  display: grid;
+  grid-template-columns: 400px 400px 400px;
+  height: 330px;
+}
+
+.picture-left {
+  grid-column-start: 1;
+  grid-column-end: 4;
+  display: grid;
+  grid-template-columns: 800px 400px;
+  height: 256px;
+}
+
+.picture {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  height: 256px;
+}
+
+.picture-description {
+  grid-column-start: 2;
+  grid-column-end: 3;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.page {
+  height: 100%;
+}
