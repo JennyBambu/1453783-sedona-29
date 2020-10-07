@@ -4,21 +4,21 @@
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
     <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-    <div class="container">
+    <div class="main-container">
       <header class="main-header">
         <nav class="main-navigation">
           <a class="main-header-logo">
             <img src="img/logo.svg" width="138" height="70" alt="Логотип Седоны">
           </a>
           <ul class="site-navigation">
-            <li><a class="link" href="">Информация</a></li>
-            <li><a class="link" href="">Фото и видео</a></li>
-            <li><a class="link" href="">Карта штата</a></li>
-            <li><a class="link" href="hotels.html">Гостиницы</a></li>
+            <li><a class="link link-navigation" href="">Информация</a></li>
+            <li><a class="link link-navigation" href="">Фото и видео</a></li>
+            <li><a class="link link-navigation" href="">Карта штата</a></li>
+            <li><a class="link link-navigation" href="hotels.html">Гостиницы</a></li>
           </ul>
         </nav>
       </header>
@@ -27,8 +27,11 @@
         <h1 class="visually-hidden">Седона</h1>
         <div class="sedona-photo"></div>
         <section class="features">
-          <h2>Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
-          <p class="intro">Рассмотрим пять причин, по которым Седона круче, чем Гранд Каньон!</p>
+          <div class="sedona-intro">
+            <h2 class="">Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
+            <p class="intro">Рассмотрим пять причин, по которым Седона круче, чем Гранд Каньон!</p>
+          </div>
+
           <ul class="features-list">
             <li>
               <div class="item-with-image picture-right">
@@ -37,7 +40,7 @@
                  <p>– №1 –</p>
                  <p>Седона-не аттракцион для туристов, там течет своя жизнь</p>
                 </div>
-                <img src="https://via.placeholder.com/800x256" alt="Фото города">
+                <img src="img/city.jpg" width="800" height="256" alt="Фото города">
               </div>
               <ul class="advantages">
                 <li class="advantages-item">
@@ -55,13 +58,13 @@
               </ul>
             </li>
             <li class="item-with-image picture-left">
+              <div class="picture">
+               <img src="img/bridge.jpg" width="800" height="256" alt="Мост Дьявола">
+              </div>
               <div class="picture-description">
               <h3 class="title-with-image">Там есть мост Дьявола</h3>
               <p>– №2 –</p>
               <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
-              </div>
-              <div class="picture">
-               <img src="https://via.placeholder.com/800x256" alt="Мост Дьявола">
               </div>
             <li class="feature-item">
               <h3 class="item-title">Небольшая площадь</h3>

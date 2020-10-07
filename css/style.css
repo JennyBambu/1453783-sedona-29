@@ -46,10 +46,19 @@ body {
  line-height: 1,5em;
  color: var(--basic-black);
  text-align: center;
+ margin: 0;
 }
 
 a {
   text-decoration: none;
+}
+
+.main-container {
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  box-shadow: 0px 10px 10px var(--shadow-site);
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .site-navigation {
@@ -58,7 +67,12 @@ a {
 
 .sedona-photo {
   background-color: var(--basic-blue);
-  display: inline-block;
+  height: 510px;
+  background-image: url(../img/welcome.svg), url(../img/phone.jpg);
+  padding-top: -20px;
+  background-size: auto, cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .item-with-image {
@@ -123,6 +137,7 @@ a {
   background-color: var(--basic-blue);
   color: var(--basic-white);
   padding: 4px 16px 4px 17px;
+  display: inline-block;
 }
 
 .link-about:hover {
@@ -138,7 +153,7 @@ a {
   background-color: var(--basic-brown);
   color: var(--basic-white);
   padding: 4px 17px 4px 16px;
-
+  display: inline-block;
 }
 
 .button-date-search {
@@ -210,59 +225,46 @@ a {
   list-style-type: none;
 }
 
-
-
-.main-footer .container {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-}
-
-
-.page-body {
-  display: grid;
-  grid-template-rows: min-content 1fr min-content;
-}
-
 .features-list {
-  display: grid;
-  grid-template-columns: 400px 400px  400px;
-  grid-template-rows: 586px 256px  256px;
+  padding-left: 0;
+  display: flex;
+  flex-wrap: wrap;
 }
 
-.picture-right {
-  grid-column-start: 1;
-  grid-column-end: 4;
-  grid-row-start: 1;
-  grid-row-end: 2;
-  display: grid;
-  grid-template-columns: 400px 800px;
-  height: 256px;
+.feature-item {
+  width: 400px;
 }
 
-.features-list .advantages {
-  display: grid;
-  grid-template-columns: 400px 400px 400px;
-  height: 330px;
+.item-with-image {
+  width: 100%;
 }
+
+.item-with-image {
+  display: flex;
+}
+
+ .advantages {
+  display: flex;
+  padding-left: 0;
+  padding-top: 150px;
+}
+
+ .advantages-item {
+  width: 400px;
+ }
 
 .picture-left {
-  grid-column-start: 1;
-  grid-column-end: 4;
-  display: grid;
-  grid-template-columns: 800px 400px;
-  height: 256px;
+ display: flex;
 }
 
-.picture {
-  grid-column-start: 1;
-  grid-column-end: 2;
-  height: 256px;
+.sedona-intro {
+  width: 600px;
+  padding: 60px 300px 51px;
 }
 
-.picture-description {
-  grid-column-start: 2;
-  grid-column-end: 3;
-}
+.intro {
+  margin-top: 28px;
+ }
 
 img {
   max-width: 100%;
@@ -271,4 +273,163 @@ img {
 
 .page {
   height: 100%;
+}
+
+.hotel-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #e5e5e5;
+  padding-left: 73px;
+  padding-right: 73px;
+  min-height: 150px;
+}
+
+.note {
+  display: flex;
+  justify-content: space-between;
+  width: 179px;
+}
+
+.flex {
+  text-align: left;
+  margin-left: 30px;
+}
+
+.hotel-card p {
+  margin:6px 0px;
+  margin-bottom: 10px;
+}
+
+
+.hotel-card h3 {
+  margin-top: -6px;
+  margin-bottom: 10px;
+
+}
+
+.buttons {
+  margin-top: 9px;
+}
+
+
+.star {
+  display: flex;
+  justify-content:space-between;
+  flex-direction: column;
+  margin-left: 520px;
+}
+
+.stars-group {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.stars-group img{
+  margin-left: 6px;
+  margin-bottom: 42px;
+}
+
+.sort {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.hotels-sorting {
+  display: flex;
+  justify-content: space-around;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin:-1px;
+  border: 0px;
+  padding: 0px;
+  clip:rect(0 0 0 0);
+  overflow:hidden;
+}
+
+.hotels-found {
+  padding-left: 70px;
+}
+
+.hotels-sorting {
+  display: flex;
+  justify-content: space-between;
+  width: 354px;
+}
+
+.sort-result {
+  display: flex;
+  margin-left: 48px;
+  width: 354px;
+  justify-content: space-between;
+}
+
+.arrows-results {
+  display: flex;
+  justify-content: flex-end;
+  width: 545px;
+}
+
+.hotels {
+  padding-top: 8px;
+  padding-bottom: 10px;
+}
+
+.main-footer .container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+}
+
+
+.social-networks-list {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+
+
+.social-networks-list li {
+  margin: 4px 3px;
+}
+
+.main-navigation {
+  line-height: 26px;
+  font-weight: 700;
+  position: relative;
+}
+
+.site-navigation {
+  display: flex;
+  padding-left: 0;
+  margin: 0;
+}
+
+.main-header-logo {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  transform: translateX(-50%);
+  margin: auto;
+  padding: auto;
+}
+
+.site-navigation li {
+  width: 20%;
+}
+
+.site-navigation li:nth-child(2) {
+  margin-right: 20%;
+}
+
+.link-navigation {
+  display: inherit;
+  padding: 10px;
 }
