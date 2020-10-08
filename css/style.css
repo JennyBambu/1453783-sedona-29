@@ -1,15 +1,15 @@
 :root {
-  --basic-white: #FFF;
+  --basic-white: #FFFFFF;
   --opacity-white: rgba(255,255,255,0.3);
 
   --white-footer: rgba(255, 255, 255, 0.9);
   --shadow-form: rgba(0, 1, 1, 0.15);
   --shadow-site: rgba(0, 1, 1, 0.2);
 
-  --basic-black: #000;
+  --basic-black: #000000;
   --basic-blue: #81B3D2;
 
-  --light-black: #333;
+  --light-black: #333333;
   --opacity-black: rgba(0,0,0,0.3);
 
   --basic-brown: #766357;
@@ -19,8 +19,8 @@
   --black-academy: #231F20;
   --grey-academy: #BDBBBC;
 
-  --background-grey: #888;
-  --basic-grey: #EEE;
+  --background-grey: #888888;
+  --basic-grey: #EEEEEE;
 
   --grey-slider: rgba(171, 171, 171, 0.3);
   --center-slider: #ABABAB;
