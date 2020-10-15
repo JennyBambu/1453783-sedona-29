@@ -216,7 +216,6 @@ img {
 .link-reservation:hover,
 .button-date-search:hover {
   background-color: var(--hover-brown);
-
 }
 
 .link-reservation:active,
@@ -224,7 +223,6 @@ img {
   background-color: var(--active-brown);
   color: var(--opacity-white);
 }
-
 
 .button-show:hover {
   background-color: var(--basic-white);
