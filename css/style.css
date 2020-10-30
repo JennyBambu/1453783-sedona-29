@@ -928,8 +928,9 @@ img {
   font-weight: 700;
 }
 
-.number-people-input:active {
-  outline: none;
+.number-people-input:focus {
+  outline: 2px solid var(--line-hotels);
+  background-color: var(--basic-white);
 }
 
 .number-people-first {
