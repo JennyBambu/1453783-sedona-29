@@ -7,18 +7,19 @@ let formNumberKids = form.querySelector('[name="number-children"]');
 
 let isStorageSupport = true;
 
-form.addEventListener('submit', function(evt) {
-  console.log('пустая форма');
-    if (!formDateIn.value || !formDateOut.value || !formNumberAdults.value || !formNumberKids.value) {
-      evt.preventDefault();
-      form.classList.remove('search-form-error');
-      form.offsetWidth = form.offsetWidth;
-      form.classList.add('search-form-error');
-}
+form.classList.add('form-inactive');
+
+form.addEventListener('submit', function (evt) {
+  if (!formDateIn.value || !formDateOut.value || !formNumberAdults.value || !formNumberKids.value) {
+    evt.preventDefault();
+    form.classList.remove('search-form-error');
+    form.offsetWidth = form.offsetWidth;
+    form.classList.add('search-form-error');
+  }
 });
 
-btn.addEventListener('click', function() {
-  form.classList.toggle('form-active');
+btn.addEventListener('click', function () {
+  form.classList.toggle('form-inactive');
 });
 
 

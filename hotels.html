@@ -4,37 +4,36 @@
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
     <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/normalize-min.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/normalize.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body>
     <div class="main-container">
       <header class="main-header">
         <nav class="main-navigation">
-          <a href="index.html" class="main-header-logo">
+          <a class="main-header-logo" href="index.html">
             <img src="img/logo.svg" width="138" height="70" alt="Логотип Седоны">
           </a>
           <ul class="site-navigation">
-            <li class="site-navigation-item-left-side">
+            <li class="site-navigation-item-left-side site-navigation-item-with-margin">
               <a class="link link-navigation" href="#">Информация</a>
             </li>
             <li class="site-navigation-item-left-side second-item">
               <a class="link link-navigation" href="#">Фото и видео</a>
             </li>
-            <li class="site-navigation-item-right-side">
+            <li class="site-navigation-item-right-side site-navigation-item-with-margin">
               <a class="link link-navigation" href="#">Карта штата</a>
             </li>
             <li class="site-navigation-item-right-side">
-              <a class="link-navigation active-page" title="Вы на этой странице">Гостиницы</a>
+              <a class="link-navigation active-page" aria-label="Вы на этой странице">Гостиницы</a>
             </li>
           </ul>
         </nav>
       </header>
-
-      <main class="container">
+      <main>
         <section class="hotels-filter">
           <h2 class="visually-hidden">Фильтр гостиниц</h2>
-          <form class="form-filter" action="https://echo.htmlacademy.ru" method="post">
+          <form class="form-filter" action="https://echo.htmlacademy.ru" method="get">
             <div class="several-filter-wrapper">
               <fieldset class="fieldset-filter">
                 <legend class="filter-legend">Инфраструктура:</legend>
@@ -53,7 +52,6 @@
                   </li>
                 </ul>
               </fieldset>
-
               <fieldset class="fieldset-filter">
                 <legend class="filter-legend">Тип жилья:</legend>
                 <ul>
@@ -72,7 +70,6 @@
                 </ul>
               </fieldset>
             </div>
-
             <div class="filter-price">
               <fieldset class="fieldset-filter">
                 <legend class="legend-form">Стоимость в сутки (р):</legend>
@@ -80,12 +77,10 @@
                   <label class="price min-value">От
                     <input class="price-value" type="text" name="min-price"  value="0">
                   </label>
-
                   <label class="price border-value">До
                     <input class="price-value max-value" type="text" name="max-price" value="3000">
                   </label>
                 </div>
-
                 <div class="range-control">
                   <div class="range-width">
                     <div class="range-bar"></div>
@@ -94,12 +89,10 @@
                   <button type="button" class="range-slider range-slider-max" aria-label="Ползунок от максимальной цены к минимальной"></button>
                 </div>
               </fieldset>
-
               <button class="button-show" type="submit">Показать</button>
             </div>
           </form>
         </section>
-
         <section class="hotels">
           <h2 class="visually-hidden">Список подходящих гостиниц</h2>
           <div class="sort">
@@ -124,7 +117,6 @@
                   <path d="M5.5 0L0 10H11L5.5 0Z"/>
                 </svg>
               </a>
-
               <a class="arrow" href="#" aria-label="Сортировка результатов по убыванию">
                 <svg class="result arrow-active" aria-hidden="true" focusable="false" width="11" height="10" viewBox="0 0 11 10" xmlns="http://www.w3.org/2000/svg">
                   <path d="M5.5 10L11 0L0 0L5.5 10Z"/>
@@ -132,7 +124,6 @@
               </a>
             </div>
           </div>
-
           <article class="hotel-card">
             <a class="hotel-photo" href="#">
               <img src="img/amara.jpg" width="135" height="90" alt="Фото гостиницы Amara resort">
@@ -143,13 +134,11 @@
                 <p>Гостиница</p>
                 <p>От 4000 р.</p>
               </div>
-
               <div>
                 <a class="link-about" href="#">Подробнее</a>
                 <a class="link-reservation" href="#">Забронировать</a>
               </div>
             </div>
-
             <div class="star">
               <div class="stars-group stars-group-four-stars">
                 <span class="visually-hidden">Уровень заведения Четыре звезды</span>
@@ -157,8 +146,6 @@
               <p class="raiting">Рейтинг: 8,5</p>
             </div>
           </article>
-
-
           <article class="hotel-card">
             <a class="hotel-photo" href="#">
               <img src="img/desert.jpg" width="135" height="90" alt="Фото мотеля Desert Quail Inn">
@@ -169,13 +156,11 @@
                 <p>Мотель</p>
                 <p>От 3000 р.</p>
               </div>
-
               <div class="buttons">
                 <a class="link-about" href="#">Подробнее</a>
                 <a class="link-reservation" href="#">Забронировать</a>
               </div>
             </div>
-
             <div class="star">
               <div class="stars-group stars-group-three-stars">
                 <span class="visually-hidden">Уровень заведения Три звезды</span>
@@ -183,25 +168,21 @@
               <p class="raiting">Рейтинг: 8,9</p>
             </div>
           </article>
-
           <article class="hotel-card">
             <a class="hotel-photo" href="#">
               <img src="img/villas.jpg" width="135" height="90" alt="Фото апартаментов Villas At Poco Diablo">
             </a>
-
             <div class="hotel-info">
               <h3><a class="link hotel-name" href="#">Villas At Poco Diablo</a></h3>
               <div class="note">
                 <p>Апартаменты</p>
                 <p>От 2000 р.</p>
               </div>
-
               <div>
                 <a class="link-about" href="#">Подробнее</a>
                 <a class="link-reservation" href="#">Забронировать</a>
               </div>
             </div>
-
             <div class="star">
               <div class="stars-group stars-group-two-stars">
                 <span class="visually-hidden">Уровень заведения Две звезды</span>
@@ -211,14 +192,12 @@
           </article>
         </section>
       </main>
-
       <footer class="main-footer">
         <div class="container">
           <div class="contacts">
-            <p>#VisitSedona</p>
+            <p class="hashtag">#VisitSedona</p>
             <p class="contacts-phone"><a class="link" href="tel:+74956660166">Тел: +7(495) 666-01-66</a></p>
           </div>
-
           <section class="social-networks">
             <h2 class="visually-hidden">Мы в социальных сетях</h2>
             <ul class="social-networks-list">
