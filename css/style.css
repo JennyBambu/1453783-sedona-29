@@ -244,7 +244,7 @@ img {
 
 .link-about:focus,
 .link-reservation:focus {
-  outline: 2px solid black;
+  outline: 2px solid var(--basic-black);
 }
 
 .active-page {
@@ -823,7 +823,7 @@ img {
 }
 
 .button-show:focus {
-   outline: 2px solid var(--basic-black);
+  outline: 2px solid var(--basic-black);
 }
 
 .search-form {
