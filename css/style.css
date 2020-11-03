@@ -242,6 +242,11 @@ img {
   background-color: var(--basic-white);
 }
 
+.link-about:focus,
+.link-reservation:focus {
+  outline: 2px solid black;
+}
+
 .active-page {
   color: var(--basic-brown);
 }
@@ -815,6 +820,10 @@ img {
 
 .button-show:hover {
   color: var(--basic-black);
+}
+
+.button-show:focus {
+   outline: 2px solid var(--basic-black);
 }
 
 .search-form {
