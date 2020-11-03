@@ -834,6 +834,7 @@ img {
 
 .form-inactive {
   transform: translateY(-100%);
+  visibility: hidden;
 }
 
 .search-form-row {
